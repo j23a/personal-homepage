@@ -1,0 +1,279 @@
+/* Inspired by https://adamstacoviak.com/ - Thanks Adam! I <3 Changelog */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  quotes: none;
+}
+
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+small {
+  display: block;
+}
+
+html,
+body {
+  background: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 880px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #f6f6ef;
+  color: #121921;
+  position: relative;
+}
+
+/* TODO unused */
+hr {
+  margin: 65px auto;
+  height: 2px;
+  width: 33%;
+  background-color: #dee5ed;
+}
+
+.signature {
+  margin: 28px 0 -5px -12px !important;
+}
+.signature img {
+  margin: 0 !important;
+  width: 200px;
+}
+@media screen and (min-width: 880px) {
+  .signature img {
+    width: 250px;
+  }
+}
+
+a {
+  color: #292929;
+  text-decoration: none;
+}
+a:hover {
+  color: #292929;
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+body {
+  padding: 30px;
+}
+
+.site-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 880px) {
+  .site-wrapper {
+    /* width: 700px; */
+    width: 680px;
+  }
+}
+
+.site-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.post-content h1,
+h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 30px;
+}
+.post-content p,
+.post-content li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.post-content .highlighter-rouge {
+  margin-bottom: 20px;
+}
+.post-content .highlighter-rouge:last-child {
+  margin-bottom: 0;
+}
+.post-content p code,
+.post-content li code {
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  color: inherit;
+  font-size: 95%;
+  padding: 2px 4px;
+}
+.post-content pre {
+  clear: both;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 15px 20px;
+  word-break: normal;
+  border-radius: 3px;
+}
+.post-content pre code {
+  display: inline;
+  line-height: inherit;
+  max-width: initial;
+  word-wrap: normal;
+}
+.post-content a {
+  /* color: #0085bd;
+  text-decoration: underline; */
+  color: #4444ee;
+  border-bottom: 1px dotted #4444ee;
+}
+.post-content a:hover {
+  background: #e6e5e6;
+  color: #121921;
+  text-decoration: none;
+  border: none;
+}
+.post-content em {
+  font-style: italic;
+}
+.post-content mark {
+  background-color: #fffeca;
+  padding: 0 2px;
+}
+.post-content strong {
+  color: #000;
+}
+.post-content blockquote {
+  border-left: 3px solid #598db2;
+  margin: 20px 0;
+  margin-left: -23px;
+  padding-left: 20px;
+  width: 100%;
+}
+.post-content ul,
+.post-content ol {
+  margin-bottom: 20px;
+}
+.post-content ul li {
+  list-style: disc inside;
+}
+.post-content ol li {
+  list-style: decimal inside;
+}
+.post-content img {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+.post-content img.wide {
+  max-width: 100%;
+}
+@media screen and (min-width: 880px) {
+  .post-content img.wide {
+    margin-left: -20%;
+    max-width: 140%;
+  }
+}
+.post-content img.border {
+  border: 1px solid #e6e5e6;
+}
+.post-content img.alignright {
+  margin: 5px 0 15px 25px;
+}
+.post-content img.alignleft {
+  margin: 5px 25px 15px 0;
+}
+.post-content img.aligncenter {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.post-content .grid-figure {
+  margin: 50px 0;
+}
+@media screen and (min-width: 880px) {
+  .post-content .grid-figure.caption-right {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-column-gap: 2.5%;
+    width: 130%;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: -17.5%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .post-content .grid-figure.caption-left {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-column-gap: 2.5%;
+    width: 130%;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 50px;
+    margin-left: -17.5%;
+  }
+  .post-content .grid-figure.caption-left p {
+    text-align: right;
+  }
+}
+.post-content .grid-figure.wide-image {
+  width: 130%;
+  margin-left: -17.5%;
+}
+.post-content .grid-figure.wide-image figcaption {
+  text-align: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 880px) {
+  .post-content .grid-figure img {
+    margin: 0;
+  }
+}
+.post-content .grid-figure figcaption,
+.post-content .grid-figure figcaption p {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.post-content .grid-figure figcaption p {
+  margin-bottom: 10px;
+}
+.post-content .grid-figure figcaption p:last-child {
+  margin-bottom: 0;
+}
+.post-content .align-self-end {
+  align-self: end;
+}
+.post-content iframe {
+  margin-bottom: 20px;
+  max-width: 100%;
+}
